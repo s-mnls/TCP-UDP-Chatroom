@@ -1,4 +1,4 @@
-# TCP UDP Chat Server and Client
+# TCP UDP Chatroom
 
 This project is a simple **UDP-based chat application** consisting of a **server** and **client**. The server can handle multiple clients concurrently, allowing them to send messages to each other. Messages are broadcasted to all connected clients, and clients can join or leave the chat at any time.
 
