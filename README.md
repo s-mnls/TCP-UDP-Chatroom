@@ -1,5 +1,4 @@
-
-# UDP Chat Server and Client
+# TCP UDP Chat Server and Client
 
 This project is a simple **UDP-based chat application** consisting of a **server** and **client**. The server can handle multiple clients concurrently, allowing them to send messages to each other. Messages are broadcasted to all connected clients, and clients can join or leave the chat at any time.
 
@@ -25,20 +24,25 @@ This project is a simple **UDP-based chat application** consisting of a **server
 ## How to Use
 
 ### Running the Server
-1. Open a terminal and navigate to the folder containing the server code.
-2. Run the server using the command:
+1. Open the folder containing the server code.
+2. Change line 6
    ```bash
-   python server.py <server_port>
+   server = ServerTCP(<server_port>)
    ```
    Replace `<server_port>` with the desired port number (e.g., 12345).
+   
+3. Run the server using the command:
+   ```bash
+   python server.py
+   ```
 
 ### Running the Client
 1. Open another terminal for each client.
 2. Run the client with the following command:
    ```bash
-   python client.py <client_name> <server_ip> <server_port>
+   python client.py --name <client_name>
    ```
-   Replace `<client_name>` with the desired username, `<server_ip>` with the server’s IP address (e.g., `localhost`), and `<server_port>` with the port the server is listening on.
+   Replace `<client_name>` with the desired username
 
 3. After connecting, clients can send messages by typing them into the terminal. Type `exit` to leave the chat.
 
