@@ -71,7 +71,3 @@ Client 2: Hi, Client 1!
 
 - The server does not support client message history or message persistence.
 - The client and server do not support any kind of encryption or secure communication.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
